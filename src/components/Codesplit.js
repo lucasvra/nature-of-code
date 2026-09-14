@@ -61,12 +61,12 @@ const Codesplit = (props) => {
               {isAnswerVisible ? (
                 <>
                   <HiOutlineEyeOff className="h-4 w-4" />
-                  <span className="ml-1">Hide Answer</span>
+                  <span className="ml-1">Ocultar resposta</span>
                 </>
               ) : (
                 <>
                   <HiOutlineEye className="h-4 w-4" />
-                  <span className="ml-1">Reveal Answer</span>
+                  <span className="ml-1">Mostrar resposta</span>
                 </>
               )}
             </button>
@@ -80,10 +80,10 @@ const Codesplit = (props) => {
             <div
               className={`absolute inset-0 flex items-center justify-center rounded bg-noc-400 text-white transition-opacity ${isCopied ? 'opacity-100' : 'opacity-0'}`}
             >
-              Copied!
+              Copiado!
             </div>
             <RiFileCopyLine className="h-4 w-4" />
-            <span className="ml-1">Copy</span>
+            <span className="ml-1">Copiar</span>
           </button>
         </div>
       </div>

@@ -3,17 +3,17 @@ import { Link } from 'gatsby';
 import { FaGithub, FaRegHeart } from 'react-icons/fa';
 import CodingTrainIcon from '../images/codingtrain_logo.png';
 
-import PurchaseButtons from './PurchaseButtons';
+import ComprarButtons from './PurchaseButtons';
 
-// Animated menu button inspired by https://codepen.io/designcouch/pen/ExvwPY
+// Animated menu button inspired por https://codepen.io/designcouch/pen/ExvwPY
 const MenuButton = (props) => {
   return (
     <button
       className="flex h-9 w-11 cursor-pointer flex-col items-center justify-between p-2 lg:hidden"
       onClick={props.onClick}
       onKeyDown={props.onClick}
-      aria-label="Toggle menu"
-      title="Toggle menu"
+      aria-label="Abrir ou fechar menu"
+      title="Abrir ou fechar menu"
     >
       <span
         className="block h-0.5 w-full rounded bg-noc-200 transition-transform"
@@ -46,11 +46,11 @@ const Header = (props) => {
         <div className="flex flex-col gap-x-6 lg:flex-row lg:items-center">
           <Link to="/">
             <span className="text-lg font-black tracking-widest text-noc-400">
-              THE NATURE OF CODE
+              A NATUREZA DO CÓDIGO
             </span>
           </Link>
           <span className="hidden text-sm tracking-widest text-noc-400 xl:block">
-            BY DANIEL SHIFFMAN
+            POR DANIEL SHIFFMAN
           </span>
         </div>
 
@@ -64,7 +64,7 @@ const Header = (props) => {
                 className="flex items-center gap-1.5 text-sm text-gray-500 hover:underline"
               >
                 <FaRegHeart size="1.2em" className="text-noc-200" />
-                SUPPORT
+                APOIE
               </a>
             </li>
             <li>
@@ -83,7 +83,7 @@ const Header = (props) => {
               >
                 <img
                   src={CodingTrainIcon}
-                  alt="Coding Train's logo"
+                  alt="logotipo do Coding Train"
                   className="-ml-2 w-8"
                 ></img>
                 CODING TRAIN
@@ -91,7 +91,7 @@ const Header = (props) => {
             </li>
           </ul>
 
-          <PurchaseButtons />
+          <ComprarButtons />
         </div>
       </div>
     </header>

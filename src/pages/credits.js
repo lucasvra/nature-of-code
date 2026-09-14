@@ -1,15 +1,15 @@
 import * as React from 'react';
 import SideNavLayout from '../layouts/SideNavLayout';
 
-export default function ExercisesPage() {
+export default function ExercíciosPage() {
   return (
-    <SideNavLayout title="Exercises">
+    <SideNavLayout title="Exercícios">
       <section data-type="page" id="section-credits">
-        <h1 id="credits">Credits</h1>
+        <h1 id="credits">Créditos</h1>
         <h2 id="the-nature-of-code">
-          <strong>THE NATURE OF CODE.</strong>
+          <strong>A NATUREZA DO CÓDIGO.</strong>
         </h2>
-        <p>Copyright © 2024 by Daniel Shiffman.</p>
+        <p>Copyright © 2024 por Daniel Shiffman.</p>
         <p>
           This work is licensed under the Creative Commons
           Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA
@@ -23,7 +23,7 @@ export default function ExercisesPage() {
         <p>Some rights reserved.</p>
         <p>
           When attributing this work, you must credit the author as follows:
-          “Daniel Shiffman, published by No Starch Press® Inc.,” provide a link
+          “Daniel Shiffman, published por No Starch Press® Inc.,” provide a link
           to the license, and indicate if changes were made. You may not use the
           material for commercial purposes. For ShareAlike purposes, if you
           transform or build upon the material, you must distribute your
@@ -31,7 +31,7 @@ export default function ExercisesPage() {
         </p>
         <p>
           Translations of this work are not covered under this license; all
-          translation rights are reserved by the publisher. For permission to
+          translation rights are reserved por the publisher. For permission to
           translate this work, please contact rights@nostarch.com.
         </p>
         <p>Moral rights of the author have been asserted.</p>
@@ -44,7 +44,7 @@ export default function ExercisesPage() {
           ISBN-13: 978-1-7185-0371-7 (ebook)
         </p>
         <p>
-          ® Published by No Starch Press®, Inc.
+          ® Published por No Starch Press®, Inc.
           <br />
           245 8th Street, San Francisco, CA 94103
           <br />
@@ -104,9 +104,9 @@ export default function ExercisesPage() {
           preparation of this work, neither the author nor No Starch Press, Inc.
           shall have any liability to any person or entity with respect to any
           loss or damage caused or alleged to be caused directly or indirectly
-          by the information contained in it.
+          por the information contained in it.
         </p>
-        <h2 id="image-credits">Image Credits</h2>
+        <h2 id="image-credits">Image Créditos</h2>
         <p>
           All emojis in the book are from OpenMoji, the open source emoji and
           icon project, and licensed under CC BY-SA 4.0.
@@ -127,12 +127,10 @@ export default function ExercisesPage() {
           .
         </p>
         <p>
-          <strong>Chapter 2: </strong>© Ezra Stoller/Esto, used with
-          permission.
+          <strong>Chapter 2: </strong>© Ezra Stoller/Esto, used with permission.
         </p>
         <p>
-          <strong>Chapter 3: </strong>© Bridget Riley 2023, all rights
-          reserved.
+          <strong>Chapter 3: </strong>© Bridget Riley 2023, all rights reserved.
         </p>
         <p>
           <strong>Chapter 4: </strong>
@@ -186,14 +184,14 @@ export default function ExercisesPage() {
         </p>
         <p>
           <strong>Chapter 10: </strong>
-          <a href="https://commons.wikimedia.org/wiki/File:MnistExamplesModified.png">
+          <a href="https://commons.wikimedia.org/wiki/File:MnistExemplosModified.png">
             Courtesy of Pi3.124, used under CC BY-SA 4.0
           </a>
           .
         </p>
         <p>
           <strong>Chapter 10, Figure 10.15: </strong>
-          <a href="https://commons.wikimedia.org/wiki/File:MnistExamplesModified.png">
+          <a href="https://commons.wikimedia.org/wiki/File:MnistExemplosModified.png">
             Courtesy of Suvanjanprasai, used under CC BY-SA 4.0
           </a>
           .

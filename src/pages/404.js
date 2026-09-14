@@ -25,19 +25,19 @@ export default function NotFoundPage({ data }) {
   return (
     <BaseLayout>
       <div className="mx-auto my-8 flex max-w-6xl flex-col items-center">
-        <h1 className="text-2xl font-bold">404 Page Not Found</h1>
+        <h1 className="text-2xl font-bold">404 — Página não encontrada</h1>
 
         {sketch && (
           <>
             <iframe
-              title="Embedded p5.js sketch"
+              title="Esboço p5.js incorporado"
               src={sketch.url}
               height={644}
               width={802}
               className="mt-10 h-[644px] w-[802px] overflow-hidden rounded-xl border border-noc-200"
             ></iframe>
             <p className="mt-2">
-              <span>by </span>
+              <span>por </span>
               {sketch.name && <span>{sketch.name}</span>}
               {sketch.socialMedia && (
                 <>
@@ -60,7 +60,7 @@ export default function NotFoundPage({ data }) {
           className="mt-12 rounded-xl bg-noc-400 px-4 py-2 text-sm font-medium text-white"
           onClick={navigateToRandomChapter}
         >
-          Bring Me To a Random Chapter!
+          Leve-me a um capítulo aleatório!
         </button>
       </div>
     </BaseLayout>
@@ -68,7 +68,7 @@ export default function NotFoundPage({ data }) {
 }
 
 export const query = graphql`
-  query QueryTargetChapters {
+  query QueryTargetCapítulos {
     allBookSection(filter: { type: { eq: "chapter" } }) {
       edges {
         node {

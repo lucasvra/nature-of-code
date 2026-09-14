@@ -3,7 +3,7 @@ import Loadable from '@loadable/component';
 import { LuLoader2 } from 'react-icons/lu';
 import { FiChevronDown } from 'react-icons/fi';
 
-const ShopifyBuyButton = Loadable(() => import('./ShopifyBuyButton'));
+const ShopifyComprarButton = Loadable(() => import('./ShopifyBuyButton'));
 
 const links = [
   { href: 'https://nostarch.com/nature-code', label: 'No Starch' },
@@ -21,11 +21,11 @@ const links = [
   },
   {
     href: 'https://github.com/nature-of-code/buyers-guide',
-    label: 'Global Retailers',
+    label: 'Lojas internacionais',
   },
 ];
 
-export const PurchaseDirectButton = ({ id, className }) => {
+export const ComprarDirectButton = ({ id, className }) => {
   const [loading, setLoading] = useState(true);
 
   return (
@@ -37,12 +37,12 @@ export const PurchaseDirectButton = ({ id, className }) => {
         <LuLoader2 className="h-5 w-5 animate-spin" />
       </button>
 
-      <ShopifyBuyButton id={id} onLoad={() => setLoading(false)} />
+      <ShopifyComprarButton id={id} onLoad={() => setLoading(false)} />
     </div>
   );
 };
 
-const PurchaseButtons = ({ aligned = 'right', className }) => {
+const ComprarButtons = ({ aligned = 'right', className }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -71,8 +71,8 @@ const PurchaseButtons = ({ aligned = 'right', className }) => {
 
   return (
     <div className={`not-prose flex items-center gap-4 ${className}`}>
-      {/* Shopify Buy Button */}
-      <PurchaseDirectButton />
+      {/* Shopify Comprar Button */}
+      <ComprarDirectButton />
 
       <div className="relative" ref={dropdownRef}>
         <button
@@ -107,4 +107,4 @@ const PurchaseButtons = ({ aligned = 'right', className }) => {
   );
 };
 
-export default PurchaseButtons;
+export default ComprarButtons;

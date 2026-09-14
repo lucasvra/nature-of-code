@@ -4,7 +4,7 @@ import { FiChevronDown, FiExternalLink } from 'react-icons/fi';
 
 const OverlayNav = () => {
   const data = useStaticQuery(graphql`
-    query QueryChaptersLink {
+    query QueryCapítulosLink {
       site {
         siteMetadata {
           customNavLinks {
@@ -62,7 +62,7 @@ const OverlayNav = () => {
             className="flex items-center gap-2 text-lg text-gray-800"
             onClick={() => setChapterListOpen(!chapterListOpen)}
           >
-            <span>Chapters</span>
+            <span>Capítulos</span>
             <FiChevronDown
               className="h-5 w-5 transition-transform"
               style={{
@@ -128,7 +128,7 @@ const OverlayNav = () => {
             href="https://github.com/sponsors/CodingTrain"
             className="flex items-center gap-1 text-lg text-gray-800"
           >
-            Support
+            Apoie
             <FiExternalLink className="w-3.5 text-gray-400" />
           </a>
         </li>

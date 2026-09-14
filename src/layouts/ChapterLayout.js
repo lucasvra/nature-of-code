@@ -16,7 +16,7 @@ const renderAst = ({ ast, images }) => {
   visit(ast, { tagName: 'img' }, (node) => {
     const relativePath = node.properties.src;
     // If the image src exist as a local file
-    // use Gatsby Image to handle
+    // use Gatspor Image to handle
     const imageSharp = images.find(
       (image) => image.relativePath === relativePath,
     );
@@ -33,7 +33,7 @@ const renderAst = ({ ast, images }) => {
       'gatsby-image': Image,
       'embed-example': Example,
       'video-link': VideoLink,
-      'codesplit': Codesplit,
+      codesplit: Codesplit,
       'exercise-with-solution': ExerciseWithSolution,
     },
   });

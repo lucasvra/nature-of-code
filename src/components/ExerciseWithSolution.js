@@ -30,12 +30,12 @@ const ExerciseWithSolution = (props) => {
             {isAnswerVisible ? (
               <>
                 <HiOutlineEyeOff className="h-4 w-4" />
-                <span className="ml-1">Hide Answer</span>
+                <span className="ml-1">Ocultar resposta</span>
               </>
             ) : (
               <>
                 <HiOutlineEye className="h-4 w-4" />
-                <span className="ml-1">Reveal Answer</span>
+                <span className="ml-1">Mostrar resposta</span>
               </>
             )}
           </button>
@@ -49,7 +49,7 @@ const ExerciseWithSolution = (props) => {
             href={props.p5EditorUrl}
           >
             <HiOutlineLink className="h-4 w-4" />
-            <span className="ml-1">Suggested Answer</span>
+            <span className="ml-1">Resposta sugerida</span>
           </a>
         )}
       </div>

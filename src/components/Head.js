@@ -41,7 +41,7 @@ const Head = ({ title, description }) => {
   return (
     <Helmet
       htmlAttributes={{
-        lang: 'en',
+        lang: 'pt-BR',
       }}
       defaultTitle={defaultTitle}
       titleTemplate={`%s / ${defaultTitle}`}
