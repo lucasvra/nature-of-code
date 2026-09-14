@@ -61,7 +61,7 @@ const SideNav = (props) => {
     : [];
 
   const data = useStaticQuery(graphql`
-    query QueryChaptersLink {
+    query QueryCapítulosLink {
       site {
         siteMetadata {
           customNavLinks {
@@ -109,7 +109,7 @@ const SideNav = (props) => {
           }
 
           if (node.type === 'chapter') {
-            // Chapters match their number
+            // Capítulos match their number
             const [chapterNumber] = node.title.split('. ');
 
             return (

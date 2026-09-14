@@ -6,16 +6,16 @@ import { FaBookOpen } from 'react-icons/fa';
 import p5jsLogo from '../images/p5js_logo.svg';
 import SideNavLayout from '../layouts/SideNavLayout';
 
-export default function ExercisesPage({ data }) {
+export default function ExercíciosPage({ data }) {
   return (
-    <SideNavLayout title="Exercises">
+    <SideNavLayout title="Exercícios">
       {data.allBookSection.edges.map(({ node: chapter }, index) => {
         if (chapter.src.childrenExercise.length === 0) return null;
 
         return (
           <section key={chapter.id}>
             <h2 className={`${index === 0 && 'mt-0'}`}>
-              Chapter {chapter.title}
+              Capítulo {chapter.title}
             </h2>
 
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -34,7 +34,7 @@ export default function ExercisesPage({ data }) {
                       <GatsbyImage
                         image={screenshot}
                         className="aspect-[8/3] rounded-3xl border object-cover"
-                        alt="p5.js sketch screenshot"
+                        alt="captura de tela do esboço p5.js"
                       />
                       <div className="px-2 pt-2 text-sm font-semibold group-hover:underline">
                         {exerciseNumber}
@@ -47,14 +47,14 @@ export default function ExercisesPage({ data }) {
                       <div className="flex items-center gap-2">
                         <Link
                           to={`/${chapter.slug}/#${exercise.slug}`}
-                          aria-label="link to chapter"
+                          aria-label="link para o capítulo"
                         >
                           <FaBookOpen className="h-8 w-5 py-2 text-noc-200" />
                         </Link>
 
                         <a
                           href={exercise.webEditorURL}
-                          aria-label="link to p5 editor"
+                          aria-label="link para o editor p5.js"
                         >
                           <img
                             src={p5jsLogo}
@@ -76,7 +76,7 @@ export default function ExercisesPage({ data }) {
 }
 
 export const query = graphql`
-  query QueryChaptersExercise {
+  query QueryCapítulosExercise {
     allBookSection(filter: { type: { eq: "chapter" } }) {
       edges {
         node {

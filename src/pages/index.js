@@ -3,7 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 import Carousel from '../components/Carousel';
 import SideNavLayout from '../layouts/SideNavLayout';
-import { PurchaseDirectButton } from '../components/PurchaseButtons';
+import { ComprarDirectButton } from '../components/PurchaseButtons';
 
 const links = [
   { href: 'https://nostarch.com/nature-code', label: 'No Starch' },
@@ -21,7 +21,7 @@ const links = [
   },
   {
     href: 'https://github.com/nature-of-code/buyers-guide',
-    label: 'Global Retailers',
+    label: 'Lojas internacionais',
   },
 ];
 
@@ -32,27 +32,27 @@ export default function IndexPage() {
         <StaticImage
           src="../images/gallery/0.jpg"
           width={1600}
-          alt="nature of code book cover on the front"
+          alt="capa da frente do livro A Natureza do Código"
         />
         <StaticImage
           src="../images/gallery/1.jpg"
           width={1600}
-          alt="a bright pink cover with white text and subtle wavy patterns."
+          alt="capa rosa-vivo com texto branco e padrões ondulados sutis"
         />
         <StaticImage
           src="../images/gallery/2.jpg"
           width={1600}
-          alt="nature of code book cover on the back"
+          alt="contracapa do livro A Natureza do Código"
         />
         <StaticImage
           src="../images/gallery/3.jpg"
           width={1600}
-          alt="an open book being held by both hands, displaying pages from “The Nature of Code.”"
+          alt="livro aberto, segurado com as duas mãos, exibindo páginas de A Natureza do Código"
         />
         <StaticImage
           src="../images/gallery/4.jpg"
           width={1600}
-          alt="an open book with a coding example titled “Including Friction,” featuring code in JavaScript (p5.js) and an screenshot of the sketch in motion."
+          alt="livro aberto com um exemplo de programação sobre atrito em JavaScript (p5.js) e uma captura do esboço em movimento"
         />
         <video playsInline muted className="m-0 aspect-video">
           <source src="/flipping.mp4" type="video/mp4" />
@@ -60,13 +60,15 @@ export default function IndexPage() {
       </Carousel>
 
       <div className="my-6">
-        Hi! Welcome! You can read the whole book here, thank you Creative
-        Commons! If this project sparks joy and you want to support it, you can{' '}
-        <a href="https://github.com/sponsors/CodingTrain">sponsor on GitHub</a>{' '}
-        or grab a copy of a bound collection of processed cellulose fibers,
-        imprinted with symbolic glyphs via pigment-based transfer particles{' '}
+        Olá! Boas-vindas! Você pode ler o livro inteiro aqui — graças ao
+        Creative Commons. Se este projeto despertar sua curiosidade e você
+        quiser apoiá-lo, pode{' '}
+        <a href="https://github.com/sponsors/CodingTrain">
+          patrocinar no GitHub
+        </a>{' '}
+        ou adquirir comigo uma cópia impressa do livro{' '}
         <a href="https://store.natureofcode.com/products/the-nature-of-code">
-          direct from me
+          diretamente na loja
         </a>
         !
       </div>
@@ -75,20 +77,20 @@ export default function IndexPage() {
         className="float-right"
         src="../images/bookmark-pink-bg.png"
         width={150}
-        alt="a hand holding a bookmark and a sticker"
+        alt="uma mão segurando um marcador de páginas e um adesivo"
       />
       <div className="my-6">
-        <b>Buying options</b>
+        <b>Opções de compra</b>
 
-        {/* Order Direct */}
+        {/* Compra direta */}
         <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2">
-          <PurchaseDirectButton />
+          <ComprarDirectButton />
           <p className="my-0 text-sm">
-            *includes exclusive bookmark and sticker!
+            *inclui marcador de páginas e adesivo exclusivos!
           </p>
         </div>
 
-        {/* Other Options */}
+        {/* Outras opções */}
         <div className="mt-4 flex flex-wrap gap-2">
           {links.map((link) => (
             <a href={link.href} key={link.href}>

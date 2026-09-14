@@ -50,7 +50,7 @@ const Example = (data) => {
       if (p5Canvas) {
         adjustFrame(p5Canvas);
       } else {
-        // otherwise, wait for the canvas to be created by p5.js
+        // otherwise, wait for the canvas to be created por p5.js
         const setupFunc = p5Window.setup;
         p5Window.setup = () => {
           setupFunc();
@@ -159,7 +159,7 @@ const Example = (data) => {
             loaded ? 'hidden' : ''
           }`}
         >
-          Loading sketch ...
+          Carregando o esboço...
         </div>
         <iframe
           ref={ref}
@@ -183,7 +183,7 @@ const Example = (data) => {
             onClick={reset}
           >
             <HiOutlineRefresh className="h-[15px] w-[15px]" />
-            {canvasWidth > 320 && <span className="ml-1.5">Reset</span>}
+            {canvasWidth > 320 && <span className="ml-1.5">Reiniciar</span>}
           </button>
 
           <button
@@ -193,12 +193,12 @@ const Example = (data) => {
             {isRunning ? (
               <>
                 <HiOutlinePause className="h-4 w-4" />
-                {canvasWidth > 320 && <span className="ml-1">Pause</span>}
+                {canvasWidth > 320 && <span className="ml-1">Pausar</span>}
               </>
             ) : (
               <>
                 <HiOutlinePlay className="h-4 w-4" />
-                {canvasWidth > 320 && <span className="ml-1">Play</span>}
+                {canvasWidth > 320 && <span className="ml-1">Executar</span>}
               </>
             )}
           </button>
@@ -211,9 +211,9 @@ const Example = (data) => {
           className="flex items-center px-2.5 text-[0.8rem] hover:underline"
         >
           {canvasWidth > 360
-            ? 'Open in Web Editor'
+            ? 'Abrir no Editor Web'
             : canvasWidth > 180
-              ? 'Web Editor'
+              ? 'Editor Web'
               : 'Editor'}
           <FiExternalLink className="ml-1 text-gray-500" />
         </a>

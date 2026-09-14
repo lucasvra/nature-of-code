@@ -7,7 +7,7 @@ const PrevNextButtons = ({ previous, next }) => {
       <div>
         {previous && (
           <Link to={`/${previous.slug}/`} className="group block">
-            <p className="text-gray-500">Previous Chapter</p>
+            <p className="text-gray-500">Capítulo anterior</p>
             <span className="text-lg font-semibold group-hover:underline">
               ← {previous.title}
             </span>
@@ -17,7 +17,7 @@ const PrevNextButtons = ({ previous, next }) => {
       <div>
         {next && (
           <Link to={`/${next.slug}/`} className="group block text-right">
-            <p className="text-gray-500">Next Chapter</p>
+            <p className="text-gray-500">Próximo capítulo</p>
             <span className="text-lg font-semibold group-hover:underline">
               {next.title} →
             </span>

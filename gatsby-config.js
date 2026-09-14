@@ -1,20 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Nature of Code`,
+    title: `A Natureza do Código`,
     siteUrl: `https://natureofcode.com`,
-    description: `Simulating Natural Systems with JavaScript`,
+    description: `Simulando sistemas naturais com JavaScript`,
     customNavLinks: [
       {
         slug: 'credits',
-        title: 'Credits',
+        title: 'Créditos',
       },
       {
         slug: 'examples',
-        title: 'Examples',
+        title: 'Exemplos',
       },
       {
         slug: 'exercises',
-        title: 'Exercises',
+        title: 'Exercícios',
       },
     ],
   },
@@ -45,7 +45,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Nature of Code`,
+        name: `A Natureza do Código`,
         start_url: `/`,
         display: `standalone`,
         icon: `src/images/favicon.png`,

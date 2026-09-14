@@ -1,18 +1,18 @@
 import React, { useRef, useEffect } from 'react';
-import ShopifyBuy from '@shopify/buy-button-js';
+import ShopifyComprar from '@shopify/buy-button-js';
 
 const SHOPIFY_DOMAIN = process.env.SHOPIFY_DOMAIN;
 const SHOPIFY_ACCESS_TOKEN = process.env.SHOPIFY_ACCESS_TOKEN;
 const SHOPIFY_PRODUCT_ID = process.env.SHOPIFY_PRODUCT_ID;
 
-const shopifyClient = ShopifyBuy.buildClient({
+const shopifyClient = ShopifyComprar.buildClient({
   domain: SHOPIFY_DOMAIN,
   storefrontAccessToken: SHOPIFY_ACCESS_TOKEN,
 });
 
-const ui = ShopifyBuy.UI.init(shopifyClient);
+const ui = ShopifyComprar.UI.init(shopifyClient);
 
-const ShopifyBuyButton = ({ id = SHOPIFY_PRODUCT_ID, onLoad }) => {
+const ShopifyComprarButton = ({ id = SHOPIFY_PRODUCT_ID, onLoad }) => {
   const buyButtonRef = useRef();
 
   useEffect(() => {
@@ -67,4 +67,4 @@ const ShopifyBuyButton = ({ id = SHOPIFY_PRODUCT_ID, onLoad }) => {
   return <div ref={buyButtonRef} />;
 };
 
-export default ShopifyBuyButton;
+export default ShopifyComprarButton;
